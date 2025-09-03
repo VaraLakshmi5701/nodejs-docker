@@ -1,5 +1,6 @@
 FROM node:16 AS Vara
-LABEL vara lakshmi
+MAINTAINER Vara Lakshmi
+LABEL my first nodejs application deployment 
 WORKDIR /flm
 COPY package*.json ./
 RUN npm install -y
