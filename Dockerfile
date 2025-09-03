@@ -1,7 +1,6 @@
 FROM node:16
-WORKDIR /app
+LABEL vara lakshmi
 COPY package*.json ./
-RUN npm install
+RUN npm install -y
 COPY . .
-EXPOSE 3000
 CMD ["node", "index.js"]
